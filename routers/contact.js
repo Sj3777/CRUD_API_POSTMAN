@@ -38,7 +38,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch("/:id",async(req,res)=>{
+router.put("/:id",async(req,res)=>{
   try{
       const contact= await Contact.findById(req.params.id);
       contact.Name=req.body.Name;
