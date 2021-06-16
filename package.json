@@ -1,0 +1,27 @@
+{
+  "name": "api_nodejs",
+  "version": "1.0.0",
+  "description": "CRUD operation using mongoDB and Api routing",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sj3777/CRUD_API_POSTMAN.git"
+  },
+  "author": "Sudhakar Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sj3777/CRUD_API_POSTMAN/issues"
+  },
+  "homepage": "https://github.com/Sj3777/CRUD_API_POSTMAN#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
