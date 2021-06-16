@@ -47,6 +47,18 @@ router.patch("/:id",async(req,res)=>{
   }catch(err){
     res.send("Error"+err);
   }
-})
+});
+
+router.delete("/:id",async(req,res)=>{
+  try{
+      const del= await Contact.findByIdAndDelete(req.params.id);
+      if(!del)throw Error("No User found!");
+      res.status(200).json({success:true});
+
+  }catch(err){
+      res.status(400).json({msg:err});
+      res.send("Error" + err);
+  }
+});
 
 module.exports = router;
