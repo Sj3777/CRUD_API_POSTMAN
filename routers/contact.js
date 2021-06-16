@@ -11,6 +11,8 @@ router.get("/", async (req, res) => {
   }
 });
 
+
+
 router.post("/", async (req, res) => {
   const contacts = new Contact({
     Name: req.body.Name,
@@ -20,7 +22,7 @@ router.post("/", async (req, res) => {
   });
   try {
     const con_save = await contacts.save();
-    res.json(con_save);
+    res.json(con_save);   
     console.log(con_save);
   } catch (err) {
     console.log(err);
